@@ -1,2 +1,3 @@
-# wp-fail2ban-addon-cf7log
-Addon for wp-fail2ban plugin to write log on CF7 submission
+# wp-cf7-log #
+
+Wordpress plugin to write log messages on CF7 submission actions.
