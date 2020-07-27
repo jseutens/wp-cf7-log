@@ -20,6 +20,16 @@ It can be matched by the `fail2ban` filter:
 failregex = ^%(__prefix_line)scontact form 7 submission from <HOST>$
 ```
 
+### How It Works ###
+
+It leverages the `wpcf7_spam` filter hook provided by `Contact Form 7` plugin,
+read more about it at:
+
+  * https://contactform7.com/2020/07/18/custom-spam-filtering/
+
+It does not change the spam status, just prints the log message to syslog and
+returns the received spam status parameter.
+
 ## Installation ##
 
 Deploy the folder with the plugin to your `wordpress/wp-content/plugins/`, then
