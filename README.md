@@ -89,7 +89,8 @@ cp fail2ban/filter.d/wp-cf7-log.conf /etc/fail2ban/filter.d/
 ```
 
 Edit `/etc/fail2ban/jail.d/wp-cf7-log.conf` and adjust the values to match better
-your needs.
+your needs. It may also require the update of `logpath` to `/var/log/messages`
+in case the deployment is on a RedHat/CentOS/Fedora/OpenSuse/... system.
 
 Restart `fail2ban`:
 
